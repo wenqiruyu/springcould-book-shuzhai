@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.book.shuzhai.mapper.ProductMapper">
+    <sql id="data_list">
+        category_id,name,author,subtitle,press,publish_date,main_img,sub_img,etail,pricing,
+        price,stock,grade,comment_num,sale,status,create_time,update_time
+    </sql>
+    <resultMap id="productMap" type="com.book.shuzhai.entity.Product">
+        <id column="id" property="id"/>
+        <result property = "categoryId" column = "category_id"/>
+        <result property = "name" column = "name"/>
+        <result property = "author" column = "author"/>
+        <result property = "subtitle" column = "subtitle"/>
+        <result property = "press" column = "press"/>
+        <result property = "publishDate" column = "publish_date"/>
+        <result property = "mainImg" column = "main_img"/>
+        <result property = "subImg" column = "sub_img"/>
+        <result property = "detail" column = "detail"/>
+        <result property = "pricing" column = "pricing"/>
+        <result property = "price" column = "price"/>
+        <result property = "stock" column = "stock"/>
+        <result property = "grade" column = "grade"/>
+        <result property = "commentNum" column = "comment_num"/>
+        <result property = "sale" column = "sale"/>
+        <result property = "status" column = "status"/>
+        <result property = "createTime" column = "create_time"/>
+        <result property = "updateTime" column = "update_time"/>
+    </resultMap>
+    <!--查询所有商品-->
+    <select id="queryProductList" resultMap="productMap">
+        select *
+        from book_product
+        where sale > 1
+        <if test="id != null">
+            and id = #{id}
+        </if>
+        <if test="name != null and name.trim() != ''">
+            and name = #{name}
+        </if>
+        <if test="author != null and author.trim() != ''">
+            and author = #{author}
+        </if>
+    </select>
+    <!--根据id获取商品-->
+    <select id="queryProductById" resultMap="productMap">
+        select *
+        from book_product
+        where id = #{id}
+    </select>
+    <!--根据分类id查询商品-->
+    <select id="queryProductListByCategory" resultMap="productMap">
+        select *
+        from book_product
+        where sale > 1
+        and category_id=#{categoryId}
+    </select>
+</mapper>

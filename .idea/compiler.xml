@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cart-server" />
+        <module name="category-server" />
+        <module name="eureka-server" />
+        <module name="gateway-zuul" />
+        <module name="product-sever" />
+        <module name="springcloud-shuzhai" />
+        <module name="ssm-server" />
+        <module name="user-server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cart-server" options="-parameters" />
+      <module name="category-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="gateway-zuul" options="-parameters" />
+      <module name="product-sever" options="-parameters" />
+      <module name="springcloud-shuzhai" options="-parameters" />
+      <module name="ssm-server" options="-parameters" />
+      <module name="user-server" options="-parameters" />
+    </option>
+  </component>
+</project>

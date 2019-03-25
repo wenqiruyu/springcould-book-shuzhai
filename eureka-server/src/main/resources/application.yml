@@ -1,0 +1,42 @@
+---
+server:
+  port: 9997
+spring:
+  application:
+    name: eureka-server
+  profiles: peer1
+#将peer1注册到peer2，peer3
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    service-url:
+      defaultZone: http://peer2:9998/eureka/,http://peer3:9999/eureka/
+---
+server:
+  port: 9998
+spring:
+  application:
+    name: eureka-server
+  profiles: peer2
+#将peer2注册到peer1，peer3
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9997/eureka/,http://peer3:9999/eureka/
+  instance:
+    hostname: peer2
+---
+server:
+  port: 9999
+spring:
+  application:
+    name: eureka-server
+  profiles: peer3
+#将peer3注册到peer1，peer2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9997/eureka/,http://peer2:9998/eureka/
+  instance:
+    hostname: peer3

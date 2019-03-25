@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.book.shuzhai.mapper.CartMapper">
+    <sql id="cartList">
+        id,user_id,product_id,quantity,checked,create_time,update_time
+    </sql>
+    <resultMap id="cartMap" type="com.book.shuzhai.entity.Cart">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="user_id" property="userId" jdbcType="BIGINT" />
+        <result column="product_id" property="productId" jdbcType="BIGINT" />
+        <result column="quantity" property="quantity" jdbcType="BIGINT" />
+        <result column="checked" property="checked" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        
+        <association property="product" javaType="com.book.shuzhai.entity.Product">
+            <result property = "categoryId" column = "category_id" jdbcType="BIGINT"/>
+            <result property = "name" column = "name"/>
+            <result property = "author" column = "author"/>
+            <result property = "subtitle" column = "subtitle"/>
+            <result property = "press" column = "press"/>
+            <result property = "publishDate" column = "publish_date"/>
+            <result property = "mainImg" column = "main_img"/>
+            <result property = "subImg" column = "sub_img"/>
+            <result property = "detail" column = "detail"/>
+            <result property = "pricing" column = "pricing"/>
+            <result property = "price" column = "price"/>
+            <result property = "stock" column = "stock"/>
+            <result property = "grade" column = "grade"/>
+            <result property = "commentNum" column = "comment_num"/>
+            <result property = "sale" column = "sale"/>
+            <result property = "status" column = "status"/>
+        </association>
+    </resultMap>
+
+    <insert id="insertCart">
+        insert into book_cart(user_id,product_id,quantity,checked,create_time,update_time)
+        values(#{userId},#{productId},#{quantity},#{checked},#{createTime},#{updateTime})
+    </insert>
+
+    <select id="queryCartByUserId" resultMap="cartMap">
+        select pro.category_id,pro.name,pro.author,pro.subtitle,pro.press,pro.publish_date,pro.main_img,pro.sub_img,pro.detail,pro.pricing,
+        pro.price,pro.stock,pro.grade,pro.comment_num,pro.sale,pro.status,cart.id,cart.product_id,cart.quantity,cart.checked,cart.create_time
+        from book_product as pro,(
+            select id,user_id,product_id,quantity,checked,create_time
+            from book_cart
+            where user_id = #{userId}
+        )cart
+        where pro.id = cart.product_id
+    </select>
+
+    <select id="queryUserCartNum" resultType="java.lang.Long">
+        select count(id)
+        from book_cart
+        where user_id = #{userId}
+    </select>
+
+    <update id="updateCartQuantity">
+        update book_cart
+        set quantity=#{quantity}
+        where user_id=#{userId}
+        and product_id=#{productId}
+    </update>
+
+    <update id="updateCartQuantityById">
+        update book_cart
+        set quantity=#{quantity}
+        where id=#{id}
+    </update>
+
+    <delete id="deleteCartById">
+        delete from book_cart
+        where id=#{id}
+    </delete>
+
+    <!--批量删除-->
+    <delete id="deleteAllCart" parameterType="java.util.List">
+        delete from book_cart
+        where id in
+        <foreach collection="list" index="index" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="queryCartById">
+        select *
+        from book_cart
+        where id=#{id}
+    </select>
+</mapper>

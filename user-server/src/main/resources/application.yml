@@ -1,0 +1,33 @@
+server:
+  port: 10002
+spring:
+  application:
+    name: user-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9997/eureka/,http://peer2:9998/eureka/,http://peer3:9999/eureka/
+mybatis:
+  type-aliases-package: com.book.shuzhai.entity
+  configuration:
+    jdbc-type-for-null: null
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
+#将feignConfig接口中的日志级别开启为debug
+logging:
+  level:
+    com.wen.feign.SmsFeignClient: debug
+#以下是使用注解方式开启feign日志功能，配置了以下配置，可以不需要UserFeignConfig
+feign:
+  client:
+    config:
+      user-server:
+        loggerLevel: FULL
+#配置用户常量 用户角色 用户性别 用户头像
+role: 1
+sex: 0
+face: ../static/img/face.jpg

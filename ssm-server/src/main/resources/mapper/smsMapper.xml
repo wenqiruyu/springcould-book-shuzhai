@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.book.shuzhai.mapper.SmsMapper">
+    <sql id="smsList">
+        phone,verify_code,type,status,detail,create_time
+    </sql>
+
+    <resultMap id="smsMap" type="com.book.shuzhai.entity.Sms">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="phone" property="phone" jdbcType="VARCHAR" />
+        <result column="verify_code" property="verifyCode" jdbcType="VARCHAR" />
+        <result column="type" property="type" jdbcType="INTEGER" />
+        <result column="status" property="status" jdbcType="INTEGER" />
+        <result column="detail" property="detail" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <insert id="insertSms" parameterType="com.book.shuzhai.entity.Sms">
+        insert into book_sms(phone,verify_code,type,status,detail,create_time)
+        values (#{phone},#{verifyCode},#{type},#{status},#{detail},#{createTime})
+    </insert>
+
+    <select id="querySms" resultMap="smsMap">
+        select phone,verify_code,type,status,detail
+        from book_sms
+        where phone = #{phone}
+        and type = #{type}
+    </select>
+
+    <update id="updateSms">
+        update book_sms
+        set verify_code=#{verifyCode},status=#{status},detail=#{detail},create_time=#{createTime}
+        where id = #{id}
+    </update>
+</mapper>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.book.shuzhai.mapper.SmsConfigMapper">
+    <resultMap id="smsConfigMap" type="com.book.shuzhai.entity.SmsConfig">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="api_url" property="paiUrl" jdbcType="VARCHAR" />
+        <result column="app_id" property="appId" jdbcType="VARCHAR" />
+        <result column="app_secret" property="appSecret" jdbcType="VARCHAR" />
+        <result column="createTime" property="createTime" />
+        <result column="updateTime" property="updateTime" />
+    </resultMap>
+
+    <select id="querySmsConfig" resultType="com.book.shuzhai.entity.SmsConfig">
+        select api_url,app_id,app_secret
+        from book_sms_config
+        where name = #{name}
+    </select>
+</mapper>

@@ -1,0 +1,19 @@
+server:
+  port: 10003
+spring:
+  application:
+    name: cart-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9997/eureka/,http://peer2:9998/eureka/,http://peer3:9999/eureka/
+mybatis:
+  type-aliases-package: com.book.shuzhai.entity
+  configuration:
+    jdbc-type-for-null: null
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
