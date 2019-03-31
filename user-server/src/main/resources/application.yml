@@ -30,4 +30,4 @@ feign:
 #配置用户常量 用户角色 用户性别 用户头像
 role: 1
 sex: 0
-face: ../static/img/face.jpg
+face: ../static/img/info/face.jpg

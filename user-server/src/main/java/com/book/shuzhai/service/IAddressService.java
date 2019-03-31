@@ -7,4 +7,12 @@ import java.util.List;
 public interface IAddressService {
 
     List<Address> getUserAddress(Long userId);
+
+    int saveUserAddress(Address address);
+
+    Long getUserAddressStatus(Long userId);
+
+    int updateUserAddress(Address address);
+
+    int deleteUserAddress(Long id);
 }

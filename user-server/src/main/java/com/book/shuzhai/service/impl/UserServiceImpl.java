@@ -3,6 +3,7 @@ package com.book.shuzhai.service.impl;
 import com.book.shuzhai.entity.User;
 import com.book.shuzhai.mapper.UserMapper;
 import com.book.shuzhai.service.IUserService;
+import com.book.shuzhai.utils.MD5Util;
 import com.book.shuzhai.utils.ServerResponse;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,14 +41,19 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public int updateUser(User user) {
+        return userMapper.updateUser(user);
+    }
+
+    @Override
     public ServerResponse<User> userLogin(String username, String password) {
         if(!(StringUtils.isBlank(username) || StringUtils.isBlank(password))){
             String pwd = userMapper.queryPasswordByName(username);
             if(pwd == null){
                 return ServerResponse.createByErrorMessage("用户名未注册");
             }else{
-                if(!password.equals(pwd)){
-                    return ServerResponse.createByErrorMessage("密码不正确");
+                if(!MD5Util.MD5EncodeUtf8(password).equals(pwd)){
+                    return ServerResponse.createByErrorMessage("用户名或密码不正确");
                 }
                 User user = userMapper.queryUserByName(username);
                 return ServerResponse.createBySuccess(new User(user.getId(),user.getUsername()));
@@ -58,6 +64,8 @@ public class UserServiceImpl implements IUserService {
 
     @Override
     public ServerResponse<String> userRegister(User user) {
+        // 需要对password进行MD5并加盐salt加密
+        user.setPassword(MD5Util.MD5EncodeUtf8(user.getPassword()));
         int result = userMapper.insertUser(user);
         if(result == 1){
             return ServerResponse.createBySuccessMessage("注册成功");

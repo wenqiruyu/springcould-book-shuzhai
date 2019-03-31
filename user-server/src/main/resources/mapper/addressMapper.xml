@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.book.shuzhai.mapper.AddressMapper">
     <sql id="addressList">
-        id,user_id,consignee_name,consignee_phone,detail,status,create_time,update_time
+        id,user_id,consignee_name,consignee_phone,provinces,detail,status,create_time,update_time
     </sql>
     <resultMap id="addressMap" type="com.book.shuzhai.entity.Address">
         <id column="id" property="id" jdbcType="BIGINT" />
@@ -16,10 +16,60 @@
         <result column="update_time" property="updateTime" />
     </resultMap>
 
+    <insert id="insertUserAddress" parameterType="com.book.shuzhai.entity.Address" useGeneratedKeys="true" keyProperty="id">
+        insert  into book_address(user_id,consignee_name,consignee_phone,provinces,detail,status,create_time,update_time)
+        values(#{userId},#{consigneeName},#{consigneePhone},#{provinces},#{detail},#{status},#{createTime},#{updateTime})
+    </insert>
+
     <select id="selectUserAddress" resultMap="addressMap">
-        select *
+        select
+        <include refid="addressList"/>
         from book_address
         where status > -1
         and user_id = #{userId}
     </select>
+
+    <select id="selectUserAddressStatus" resultType="Long">
+        select id
+        from book_address
+        where status = 0
+        and user_id = #{userId}
+    </select>
+
+    <update id="updateUserAddress" parameterType="com.book.shuzhai.entity.Address">
+        update book_address
+        <set>
+            <if test="status != null">
+                status = #{status},
+            </if>
+            <if test="consigneeName != null and consigneeName.trim() != ''">
+                consignee_name = #{consigneeName},
+            </if>
+            <if test="consigneePhone != null and consigneePhone.trim() != ''">
+                consignee_phone = #{consigneePhone},
+            </if>
+            <if test="provinces != null and provinces.trim() != ''">
+                provinces = #{provinces},
+            </if>
+            <if test="detail != null and detail.trim() != ''">
+                detail = #{detail},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!--删除地址，将status修改为-1-->
+    <update id="deleteUserAddress">
+        update book_address
+        set status = -1
+        where id = #{id}
+    </update>
+
+    <!--<delete id="deleteUserAddress">-->
+        <!--delete from book_address-->
+        <!--where id = #{id}-->
+    <!--</delete>-->
 </mapper>

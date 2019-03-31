@@ -2,34 +2,40 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.book.shuzhai.mapper.UserMapper">
     <sql id="userList">
-        id,username,password,email,phone,role,sex,face,create_time,update_time
+        id,username,email,qq,phone,role,sex,face,birthday,signature,question,create_time,update_time
     </sql>
     <resultMap id="userMap" type="com.book.shuzhai.entity.User">
         <id column="id" property="id" jdbcType="BIGINT" />
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="password" property="password" jdbcType="VARCHAR" />
         <result column="email" property="email" jdbcType="VARCHAR" />
+        <result column="qq" property="qq" jdbcType="VARCHAR" />
         <result column="phone" property="phone" jdbcType="VARCHAR" />
         <result column="role" property="role" jdbcType="INTEGER" />
         <result column="sex" property="sex" jdbcType="INTEGER" />
         <result column="face" property="face" jdbcType="VARCHAR" />
+        <result column="birthday" property="birthday" jdbcType="VARCHAR"/>
+        <result column="signature" property="signature" />
+        <result column="question" property="question" />
         <result column="create_time" property="createTime" />
         <result column="update_time" property="updateTime" />
     </resultMap>
 
     <insert id="insertUser" parameterType="com.book.shuzhai.entity.User" useGeneratedKeys="true" keyProperty="id">
-        insert into book_user(username,password,email,phone,role,sex,face,create_time,update_time)
-        values(#{username},#{password},#{email},#{phone},#{role},#{sex},#{face},#{createTime},#{updateTime})
+        insert into book_user(username,password,email,qq,phone,role,sex,face,birthday,signature,question,create_time,update_time)
+        values(#{username},#{password},#{email},#{qq},#{phone},#{role},#{sex},#{face},#{birthday},#{signature},#{question},#{createTime},#{updateTime})
     </insert>
 
     <select id="queryUserById" resultType="com.book.shuzhai.entity.User">
-        select *
+        select
+        <include refid="userList"/>
         from book_user
         where id=#{id}
     </select>
 
     <select id="queryUserByName" resultType="com.book.shuzhai.entity.User">
-        select *
+        select
+        <include refid="userList"/>
         from book_user
         where username=#{username}
     </select>
@@ -45,4 +51,10 @@
         from book_user
         where phone=#{phone}
     </select>
+
+    <update id="updateUser">
+        update book_user
+        set username = #{username},birthday = #{birthday},sex = #{sex},signature = #{signature},update_time = #{updateTime}
+        where id = #{id}
+    </update>
 </mapper>

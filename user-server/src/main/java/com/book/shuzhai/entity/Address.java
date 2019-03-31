@@ -18,11 +18,29 @@ public class Address {
     private String provinces;
     // 详细地址
     private String detail;
-    // 地址状态 1表示使用 0表示删除
+    // 地址状态 -1表示删除 0表示默认地址 1表示使用地址
     private Integer status;
     // 创建时间
     private Date createTime;
     // 最后一次更改时间
     private Date updateTime;
 
+    public Address(){}
+
+    public Address(Long id, Integer status) {
+        this.id = id;
+        this.status = status;
+    }
+
+    public Address(Long id, Long userId, String consigneeName, String consigneePhone, String provinces, String detail, Integer status, Date createTime, Date updateTime) {
+        this.id = id;
+        this.userId = userId;
+        this.consigneeName = consigneeName;
+        this.consigneePhone = consigneePhone;
+        this.provinces = provinces;
+        this.detail = detail;
+        this.status = status;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
 }

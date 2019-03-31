@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="803d7e44-81aa-4040-82c0-704ad67019e0" name="Default Changelist" comment="" />
+    <list default="true" id="803d7e44-81aa-4040-82c0-704ad67019e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/config/AliPayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/config/AliPayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/controller/AliPayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/controller/AliPayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/AddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/AddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/test/java/com/book/shuzhai/UserServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/test/java/com/book/shuzhai/UserServerApplicationTests.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
@@ -11,6 +33,7 @@
     <ignored path="$PROJECT_DIR$/user-server/target/" />
     <ignored path="$PROJECT_DIR$/ssm-server/target/" />
     <ignored path="$PROJECT_DIR$/cart-server/target/" />
+    <ignored path="$PROJECT_DIR$/pay-server/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,51 +60,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/entity/Sms.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/AddressController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="263">
+              <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/AddressMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2972#2973#0" expanded="true" />
-                <element signature="e#2999#3000#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -89,73 +98,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/controller/ProductController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-950">
-              <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+            <state relative-caret-position="588">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3376#3377#0" expanded="true" />
-                <element signature="e#3410#3411#0" expanded="true" />
+                <element signature="e#632#633#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#778#779#0" expanded="true" />
+                <element signature="e#1111#1112#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/controller/SmsController.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/Address.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/service/impl/SmsServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-                <element signature="e#1648#1649#0" expanded="true" />
-                <element signature="e#1695#1696#0" expanded="true" />
-                <element signature="e#1906#1907#0" expanded="true" />
-                <element signature="e#1930#1931#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/controller/CartController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="30" column="42" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -170,36 +131,24 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>smsFeignClient</find>
+      <find>saveUserAddress</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/gateway-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/gateway-zuul/src/main/java/com/book/shuzhai/GatewayZuulApplication.java" />
-        <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/gateway-zuul/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/category-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/product-sever/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/Address.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/AddressMapper.xml" />
-        <option value="$PROJECT_DIR$/product-sever/src/main/resources/mapper/productMapper.xml" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/AddressMapper.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/Controller/UserController.java" />
-        <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/CartServerApplication.java" />
-        <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/entity/Cart.java" />
-        <option value="$PROJECT_DIR$/product-sever/pom.xml" />
-        <option value="$PROJECT_DIR$/cart-server/pom.xml" />
         <option value="$PROJECT_DIR$/cart-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/entity/Product.java" />
         <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/mapper/CartMapper.java" />
         <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/service/ICartService.java" />
         <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/service/impl/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/cart-server/src/main/resources/mapper/cartMapper.xml" />
-        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/Controller/AddressController.java" />
         <option value="$PROJECT_DIR$/ssm-server/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -208,22 +157,43 @@
         <option value="$PROJECT_DIR$/user-server/pom.xml" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/UserServerApplication.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/feign/config/SmsFeignConfig.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/mapper/SmsConfigMapper.java" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/resources/mapper/smsConfigMapper.xml" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/utils/SmsTemplate.java" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/mapper/SmsMapper.java" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/service/ISmsService.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/feign/SmsFeignClient.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/User.java" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/resources/mapper/smsMapper.xml" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/entity/Sms.java" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/controller/SmsController.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java" />
         <option value="$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/service/impl/SmsServiceImpl.java" />
         <option value="$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/controller/CartController.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/shuzhai.properties" />
+        <option value="$PROJECT_DIR$/user-server/src/main/resources/shuzhai.yml" />
+        <option value="$PROJECT_DIR$/user-server/src/test/java/com/book/shuzhai/UserServerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/utils/PropertiesUtil.java" />
+        <option value="$USER_HOME$/Desktop/电商项目/后端/k13d6t/src/main/java/com/mmall/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pay-server/src/test/java/com/book/shuzhai/PayServerApplicationTests.java" />
+        <option value="$PROJECT_DIR$/pay-server/pom.xml" />
+        <option value="$PROJECT_DIR$/pay-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/config/AliPayConfig.java" />
+        <option value="$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/controller/AliPayController.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/utils/MD5Util.java" />
+        <option value="$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/service/IProductService.java" />
+        <option value="$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/mapper/ProductMapper.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/User.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/AddressMapper.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/Address.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/AddressController.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml" />
       </list>
     </option>
   </component>
@@ -235,278 +205,19 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="249" />
-    <option name="y" value="89" />
+    <option name="x" value="244" />
+    <option name="y" value="84" />
     <option name="width" value="1666" />
     <option name="height" value="1071" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="cart-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="cart-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="cart-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="cart-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="cart-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="cart-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="ssm-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
-              <item name="user-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -519,6 +230,62 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springcloud-shuzhai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springcloud-shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="user-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="shuzhai" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -529,7 +296,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553439656154" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554008792937" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -540,17 +307,20 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.book.shuzhai.entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\user-server\src\main\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\user-server\src\main\java\com\book\shuzhai\utils" />
+      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\cart-server\src\main\java\com\book\shuzhai\utils" />
+      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\category-server\src\main\java\com\book\shuzhai\utils" />
+      <recent name="D:\work_tool\idea_workspace\springcloudshuzhai\product-sever\src\main\java\com\book\shuzhai\utils" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.book.shuzhai" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\cart-server\src\main\java\com\book\shuzhai\utils" />
-      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\user-server\src\main\java\com\book\shuzhai\utils" />
-      <recent name="D:\work_tool\idea_workspace\springcloud-shuzhai\category-server\src\main\java\com\book\shuzhai\utils" />
-      <recent name="D:\work_tool\idea_workspace\springcloudshuzhai\product-sever\src\main\java\com\book\shuzhai\utils" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.book.shuzhai.entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -565,7 +335,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CartServerApplication">
+  <component name="RunManager" selected="Spring Boot.PayServerApplication">
     <configuration name="ProductControllerTest.getProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="product-sever" />
       <extension name="coverage">
@@ -577,6 +347,22 @@
       <option name="PACKAGE_NAME" value="com.book.shuzhai" />
       <option name="MAIN_CLASS_NAME" value="com.book.shuzhai.ProductControllerTest" />
       <option name="METHOD_NAME" value="getProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServerApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.book.shuzhai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.book.shuzhai" />
+      <option name="MAIN_CLASS_NAME" value="com.book.shuzhai.UserServerApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -600,6 +386,13 @@
     <configuration name="GatewayZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="gateway-zuul" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.book.shuzhai.GatewayZuulApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PayServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="pay-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.book.shuzhai.PayServerApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -654,6 +447,7 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ProductControllerTest.getProduct" />
+      <item itemvalue="JUnit.UserServerApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.peer1" />
       <item itemvalue="Spring Boot.peer2" />
       <item itemvalue="Spring Boot.peer3" />
@@ -663,9 +457,11 @@
       <item itemvalue="Spring Boot.UserServerApplication" />
       <item itemvalue="Spring Boot.SsmServerApplication" />
       <item itemvalue="Spring Boot.CartServerApplication" />
+      <item itemvalue="Spring Boot.PayServerApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServerApplicationTests.contextLoads" />
         <item itemvalue="JUnit.ProductControllerTest.getProduct" />
       </list>
     </recent_temporary>
@@ -687,46 +483,51 @@
       <workItem from="1553129198604" duration="16124000" />
       <workItem from="1553152336493" duration="25112000" />
       <workItem from="1553314167937" duration="23527000" />
+      <workItem from="1553478035771" duration="17460000" />
+      <workItem from="1553583925850" duration="4982000" />
+      <workItem from="1553654503475" duration="2055000" />
+      <workItem from="1553666737824" duration="29797000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 11h 21m 19s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 26m 34s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 11h 23m 04s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 28m 23s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 11h 24m 48s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 29m 06s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 12h 19m 52s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 30m 12s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 12h 28m 17s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 30m 38s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 14h 17m 34s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 33m 20s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 14h 39m 46s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 37m 07s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 14h 40m 51s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 38m 14s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 15h 34m 07s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 40m 35s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest_getProduct - 2019.03.19 at 15h 35m 01s.xml">
-      <configuration name="ProductControllerTest.getProduct" configurationId="JUnit" />
+    <history-entry file="UserServerApplicationTests_contextLoads - 2019.03.25 at 11h 56m 55s.xml">
+      <configuration name="UserServerApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119220000" />
+    <option name="totallyTimeSpent" value="173514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1563" height="845" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
@@ -734,19 +535,19 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" weight="0.26511627" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.21262458" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32913166" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32819074" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.35154063" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.4964937" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -770,19 +571,19 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.26511627" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.21262458" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32913166" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32819074" />
       <window_info anchor="bottom" id="Java Enterprise" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32913166" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.35154063" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.28611502" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -804,267 +605,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/category-server/src/main/resources/mapper/categoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/ProductSeverApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="150" selection-start-line="6" selection-start-column="150" selection-end-line="6" selection-end-column="150" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="32" selection-start-line="32" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/entity/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/service/ICartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="14" column="51" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="65" column="28" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1732#1733#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1812#1813#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/CartServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/mapper/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/AddressController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/SsmServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/resources/mapper/productMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="9" lean-forward="true" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="15" column="6" selection-start-line="14" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="51" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/UserServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/mapper/SmsConfigMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/resources/mapper/smsConfigMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/utils/ServerResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart-server/src/main/resources/mapper/cartMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/mapper/SmsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/utils/SmsTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
@@ -1077,40 +617,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/feign/config/SmsFeignConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/service/ISmsService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/feign/SmsFeignClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1136,7 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/entity/Sms.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="600">
           <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1144,88 +654,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/controller/SmsController.java">
+    <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/utils/ServerResponse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/controller/ProductController.java">
+    <entry file="file://$USER_HOME$/Desktop/电商项目/后端/k13d6t/src/main/java/com/mmall/util/PropertiesUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3376#3377#0" expanded="true" />
-            <element signature="e#3410#3411#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-450" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml">
+    <entry file="file://$USER_HOME$/Desktop/电商项目/后端/k13d6t/src/main/java/com/mmall/vo/ShippingVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="76" column="71" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2972#2973#0" expanded="true" />
-            <element signature="e#2999#3000#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/service/impl/SmsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#1648#1649#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#1930#1931#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-837" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cart-server/src/main/java/com/book/shuzhai/controller/CartController.java">
@@ -1235,6 +678,348 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/shuzhai.yml" />
+    <entry file="file://$USER_HOME$/Desktop/电商项目/后端/k13d6t/src/main/java/com/mmall/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/电商项目/后端/k13d6t/src/main/java/com/mmall/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1912">
+          <caret line="17" column="52" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/电商项目/后端/k13d6t/src/main/java/com/mmall/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/test/java/com/book/shuzhai/UserServerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+          <folding>
+            <element signature="e#374#375#0" expanded="true" />
+            <element signature="e#410#411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/utils/PropertiesUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-server/src/test/java/com/book/shuzhai/PayServerApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/PayServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#322#323#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/UserServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/controller/AliPayController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay-server/src/main/java/com/book/shuzhai/config/AliPayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/utils/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/shuzhai.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="63" selection-start-column="63" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/feign/config/SmsFeignConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/feign/SmsFeignClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/controller/SmsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssm-server/src/main/java/com/book/shuzhai/service/impl/SmsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="98" column="36" lean-forward="true" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/service/IProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/mapper/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="62" lean-forward="true" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-575">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3410#3411#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/src/main/java/com/book/shuzhai/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="40" column="216" selection-start-line="40" selection-start-column="216" selection-end-line="40" selection-end-column="216" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1179#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="23" column="96" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product-sever/src/main/resources/mapper/productMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="36" column="35" lean-forward="true" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/mapper/AddressMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/IAddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/entity/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="112" column="26" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/service/impl/AddressServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#632#633#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/book/shuzhai/controller/AddressController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="80" column="34" selection-start-line="80" selection-start-column="34" selection-end-line="80" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/addressMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
         </state>
       </provider>
     </entry>

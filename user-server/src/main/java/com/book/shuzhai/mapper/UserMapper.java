@@ -14,4 +14,6 @@ public interface UserMapper {
     String queryPasswordByName(String username);
 
     User queryUserByPhone(String phone);
+
+    int updateUser(User user);
 }

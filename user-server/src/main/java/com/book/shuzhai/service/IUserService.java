@@ -15,6 +15,8 @@ public interface IUserService {
 
     User getUserByPhone(String phone);
 
+    int updateUser(User user);
+
     ServerResponse<User> userLogin(String name, String password);
 
     ServerResponse<String> userRegister(User user);
