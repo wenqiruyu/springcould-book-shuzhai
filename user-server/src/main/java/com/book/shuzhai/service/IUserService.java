@@ -3,7 +3,11 @@ package com.book.shuzhai.service;
 import com.book.shuzhai.entity.User;
 import com.book.shuzhai.utils.ServerResponse;
 
+import java.util.List;
+
 public interface IUserService {
+
+    List<User> getAllUser();
 
     int addUser(User user);
 
@@ -17,7 +21,9 @@ public interface IUserService {
 
     int updateUser(User user);
 
-    ServerResponse<User> userLogin(String name, String password);
+    ServerResponse<String> userLogin(String name, String password);
 
     ServerResponse<String> userRegister(User user);
+
+    int updateUserPassword(User user);
 }

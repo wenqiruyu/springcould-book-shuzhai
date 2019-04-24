@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.book.shuzhai.mapper.ProductMapper">
     <sql id="data_list">
-        category_id,name,author,subtitle,press,publish_date,main_img,sub_img,etail,pricing,
+        category_id,name,author,subtitle,press,publish_date,main_img,sub_img,detail,pricing,
         price,stock,grade,comment_num,sale,status,create_time,update_time
     </sql>
     <resultMap id="productMap" type="com.book.shuzhai.entity.Product">
@@ -26,6 +26,11 @@
         <result property = "createTime" column = "create_time"/>
         <result property = "updateTime" column = "update_time"/>
     </resultMap>
+    <!--上架图书-->
+    <insert id="insertProduct">
+        insert into book_product(category_id,name,author,subtitle,press,publish_date,main_img,sub_img,detail,pricing,price,stock,create_time,update_time)
+        values(#{categoryId},#{name},#{author},#{subtitle},#{press},#{publishDate},#{mainImg},#{subImg},#{detail},#{pricing},#{price},#{stock},#{createTime},#{updateTime})
+    </insert>
     <!--查询所有商品-->
     <select id="queryProductList" resultMap="productMap">
         select *
@@ -49,9 +54,19 @@
     </select>
     <!--根据分类id查询商品-->
     <select id="queryProductListByCategory" resultMap="productMap">
-        select *
+        select id,
+        <include refid="data_list" />
         from book_product
         where sale > 1
         and category_id=#{categoryId}
+    </select>
+    <!--根据搜索框进行模糊查询-->
+    <select id="queryProductListBySearch" resultMap="productMap" parameterType="String">
+        select *
+        from book_product
+        where sale > 1
+        <if test="_parameter != null and _parameter != ''">
+            and CONCAT(name,author,subtitle,press) LIKE '%' #{search} '%'
+        </if>
     </select>
 </mapper>

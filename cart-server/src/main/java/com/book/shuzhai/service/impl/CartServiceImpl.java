@@ -1,6 +1,7 @@
 package com.book.shuzhai.service.impl;
 
 import com.book.shuzhai.entity.Cart;
+import com.book.shuzhai.entity.Product;
 import com.book.shuzhai.mapper.CartMapper;
 import com.book.shuzhai.service.ICartService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,5 +71,15 @@ public class CartServiceImpl implements ICartService {
     @Override
     public Cart getCartById(Long id) {
         return cartMapper.queryCartById(id);
+    }
+
+    @Override
+    public List<Cart> getAllCart(List<Long> id) {
+        return cartMapper.queryAllCart(id);
+    }
+
+    @Override
+    public Product getProductById(Long id) {
+        return cartMapper.queryProductById(id);
     }
 }

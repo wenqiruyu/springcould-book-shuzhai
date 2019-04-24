@@ -11,6 +11,8 @@ zuul:
   host:
     socket-timeout-millis: 60000
     connect-timeout-millis: 60000
+  add-host-header: true # 携带请求头本身的head头信息
+  sensitive-headers: null # 配置禁止使用的头部信息，这里设置为null，否则set-cookie无效
 
 hystrix:
   command:

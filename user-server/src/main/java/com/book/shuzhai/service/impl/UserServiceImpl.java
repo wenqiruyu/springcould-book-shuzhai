@@ -1,6 +1,8 @@
 package com.book.shuzhai.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.book.shuzhai.entity.User;
+import com.book.shuzhai.feign.RedisFeignClient;
 import com.book.shuzhai.mapper.UserMapper;
 import com.book.shuzhai.service.IUserService;
 import com.book.shuzhai.utils.MD5Util;
@@ -9,11 +11,23 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @Service
 public class UserServiceImpl implements IUserService {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private RedisFeignClient redisFeignClient;
+
+    @Override
+    public List<User> getAllUser() {
+        return userMapper.queryAllUser();
+    }
 
     @Override
     public int addUser(User user) {
@@ -46,7 +60,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public ServerResponse<User> userLogin(String username, String password) {
+    public ServerResponse<String> userLogin(String username, String password) {
         if(!(StringUtils.isBlank(username) || StringUtils.isBlank(password))){
             String pwd = userMapper.queryPasswordByName(username);
             if(pwd == null){
@@ -56,7 +70,8 @@ public class UserServiceImpl implements IUserService {
                     return ServerResponse.createByErrorMessage("用户名或密码不正确");
                 }
                 User user = userMapper.queryUserByName(username);
-                return ServerResponse.createBySuccess(new User(user.getId(),user.getUsername()));
+                Map<String, Object> map = new HashMap<>();
+                return ServerResponse.createBySuccess(JSON.toJSONString(new User(user.getId(),user.getUsername())));
             }
         }
         return ServerResponse.createByErrorMessage("系统错误，请稍后再试");
@@ -68,8 +83,17 @@ public class UserServiceImpl implements IUserService {
         user.setPassword(MD5Util.MD5EncodeUtf8(user.getPassword()));
         int result = userMapper.insertUser(user);
         if(result == 1){
+            // 注册成功，将redis中的验证码删除, 就是将该redis的值设置为 ''
+            redisFeignClient.toSaveString(user.getPhone(), Long.parseLong("15"),"");
             return ServerResponse.createBySuccessMessage("注册成功");
         }
         return ServerResponse.createByErrorMessage("系统错误，请稍后再试");
+    }
+
+    @Override
+    public int updateUserPassword(User user) {
+        // 将密码进行加盐MD5加密
+        user.setPassword(MD5Util.MD5EncodeUtf8(user.getPassword()));
+        return userMapper.updateUser(user);
     }
 }

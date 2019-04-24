@@ -24,10 +24,10 @@ public class AliPayConfig {
     public static String alipay_public_key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxjhJhXd7bSCEcApGbKLuqjw/1boTLPk0BIF2tJF9TE27VXrYsyrxo1JM8oGriBFdDl6OEgez3DPfaIbaTzi1ywEjTpoDYOx20Gc1HwH88LA+Fg26BT1FwL7jMYfvJjT1z85lIbjkyQfY3PCL5rOtkQ0Oq7UHVTn/nfyu/k2lhETn+NDGW7Wf6Dvm+HF8bVsLfFpysRuBmI1WzbVqeJufCUOxwbjChzZVnitAVyhHQ0GKp3twQG3HOmOuPhJ3WQUhonosUyjI5/sSSEuSwrlxswYaWhN9DrwXuWi7ghpNXw3kNpexGB+C5JEbVQXhHEDARsGBptBOGZJU1pRsHU4w2QIDAQAB";
 
     // 服务器异步通知页面路径  需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-    public static String notify_url = "http://localhost:8080/alipay.trade.page.pay-JAVA-UTF-8/notify_url.jsp";
+    public static String notify_url = "http://2t4316h649.qicp.vip/pay/notify";
 
-    // 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-    public static String return_url = "http://localhost:8080/alipay.trade.page.pay-JAVA-UTF-8/return_url.jsp";
+    // 页面跳转同步通知页面路径
+    public static String return_url = "http://localhost:8080/paySuccess";
 
     // 签名方式
     public static String sign_type = "RSA2";

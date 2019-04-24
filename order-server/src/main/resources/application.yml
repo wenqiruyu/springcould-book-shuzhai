@@ -1,0 +1,31 @@
+server:
+  port: 10006
+spring:
+  application:
+    name: order-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9997/eureka/,http://peer2:9998/eureka/,http://peer3:9999/eureka/
+mybatis:
+  type-aliases-package: com.book.shuzhai.entity
+  configuration:
+    jdbc-type-for-null: null
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*Mapper.xml
+#��feignConfig�ӿ��е���־������Ϊdebug
+logging:
+  level:
+    com.wen.feign.SmsFeignClient: debug
+#������ʹ��ע�ⷽʽ����feign��־���ܣ��������������ã����Բ���ҪUserFeignConfig
+feign:
+  client:
+    config:
+      user-server:
+        loggerLevel: FULL
+  hystrix:
+    enabled: false

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.book.shuzhai.mapper.IOrderMapper">
+    <sql id="orderList">
+        order_number,user_id,cart_id,product_id,address_id,quantity,order_money,status,pay_time,create_time
+    </sql>
+    <resultMap id="orderMap" type="com.book.shuzhai.entity.Order">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result property = "orderNumber" column = "order_number" jdbcType="VARCHAR"/>
+        <result property = "userId" column = "user_id" jdbcType="BIGINT"/>
+        <result property = "cartId" column = "cart_id" jdbcType="VARCHAR"/>
+        <result property = "productId" column = "product_id" jdbcType="BIGINT"/>
+        <result property = "addressId" column = "address_id" jdbcType="BIGINT"/>
+        <result property = "quantity" column = "quantity" jdbcType="BIGINT"/>
+        <result property = "orderMoney" column = "order_money"/>
+        <result property = "status" column = "status"/>
+        <result property = "payTime" column = "pay_time"/>
+        <result property = "createTime" column = "create_time"/>
+    </resultMap>
+
+    <insert id="insertOrder" parameterType="com.book.shuzhai.entity.Order" useGeneratedKeys="true" keyProperty="id">
+        insert into  book_order(order_number,user_id,cart_id,product_id,address_id,quantity,order_money,status,pay_time,create_time)
+        values (#{orderNumber},#{userId},#{cartId},#{productId},#{addressId},#{quantity},#{orderMoney},#{status},#{payTime},#{createTime})
+    </insert>
+
+    <select id="queryAllOrder" resultMap="orderMap">
+        select id
+        <include refid="orderList"/>
+        from book_order
+    </select>
+
+    <select id="queryAllOrderGroup" resultMap="orderMap">
+        select DATE_FORMAT(o.create_time,'%Y%m%d') rankTime,id,
+        <include refid="orderList"/>
+        from book_order o
+        where user_id = #{userId}
+        and status > 0
+        group by o.create_time
+        order by o.create_time
+    </select>
+
+</mapper>

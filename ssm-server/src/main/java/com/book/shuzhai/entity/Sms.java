@@ -12,7 +12,7 @@ public class Sms {
     private String phone;
     // 验证码
     private String verifyCode;
-    // 短信类型 0为注册验证短信 1为注册提示 2为登录验证短信 3为广告短
+    // 短信类型 0为注册验证短信 1为注册提示 2为登录验证短信 3为广告短信 4为更改密码短信验证
     private Integer type;
     // 短信状态
     private Integer status;

@@ -37,6 +37,13 @@ public class AddressController {
     @ApiOperation(value = "添加收货地址", notes = "根据用户填写的地址信息添加用户的收货地址")
     @ApiImplicitParam(name = "address", value = "地址信息address", required = true, dataType = "Address")
     public ServerResponse<String> saveUserAddress(@RequestBody Address address){
+        if(address.getStatus() == 0){
+            // 查询用户是否存在默认地址
+            Long addressId = addressService.getUserAddressStatus(address.getUserId());
+            if(addressId != null && addressId != 0){
+                addressService.updateUserAddress(new Address(addressId, 1));
+            }
+        }
         address.setCreateTime(new Date());
         address.setUpdateTime(new Date());
         int result = addressService.saveUserAddress(address);

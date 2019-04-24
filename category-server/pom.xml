@@ -31,42 +31,10 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- 添加feign依赖 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-
-        <!-- 添加swagger依赖 -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>io.swagger</groupId>
-                    <artifactId>swagger-annotations</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>io.swagger</groupId>
-                    <artifactId>swagger-models</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-annotations</artifactId>
-            <version>1.5.21</version>
-        </dependency>
-        <dependency>
-            <groupId>io.swagger</groupId>
-            <artifactId>swagger-models</artifactId>
-            <version>1.5.21</version>
-        </dependency>
-        <!--swagger增强，界面更友好-->
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>swagger-bootstrap-ui</artifactId>
-            <version>1.8.9</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
 

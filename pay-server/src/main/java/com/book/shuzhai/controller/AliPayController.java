@@ -6,9 +6,12 @@ import com.alipay.api.DefaultAlipayClient;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import com.book.shuzhai.config.AliPayConfig;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @RestController
 public class AliPayController {
@@ -49,5 +52,13 @@ public class AliPayController {
             e.printStackTrace();
         }
         return result;
+    }
+
+    @GetMapping("/pay/notify")
+    public String payNotify(HttpServletRequest request, HttpServletResponse response){
+        String status = request.getParameter("trade_status");//交易状态
+        System.out.println("1111111111111111");
+        System.out.println(status);
+        return null;
     }
 }

@@ -42,4 +42,17 @@ public class SmsTemplate {
         map.put("verifyDetail",verifyDetail);
         return map;
     }
+
+    /**
+     * 用户进行手机号更改密码的验证短信
+     * @return
+     */
+    public static Map<String,String> getUpdatePwdSms(){
+        Map<String,String> map = new HashMap<>();
+        String verifyCode = getVerifyCode();
+        String verifyDetail = "您正在修改密码！验证码为" + verifyCode + "。该验证码仅用于身份验证，请勿泄漏给他人。（请确保是本人操作且为本人手机，否则请忽略此短信）";
+        map.put("verifyCode",verifyCode);
+        map.put("verifyDetail",verifyDetail);
+        return map;
+    }
 }

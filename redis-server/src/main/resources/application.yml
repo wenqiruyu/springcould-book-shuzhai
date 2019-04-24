@@ -1,0 +1,14 @@
+spring:
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 60000
+  application:
+    name: redis-server
+server:
+  port: 10007
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:9997/eureka/,http://peer2:9998/eureka/,http://peer3:9999/eureka/

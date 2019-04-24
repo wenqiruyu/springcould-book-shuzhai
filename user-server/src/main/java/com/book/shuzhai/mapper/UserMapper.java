@@ -3,7 +3,11 @@ package com.book.shuzhai.mapper;
 
 import com.book.shuzhai.entity.User;
 
+import java.util.List;
+
 public interface UserMapper {
+
+    List<User> queryAllUser();
 
     int insertUser(User user);
 

@@ -16,6 +16,8 @@ public class Cart {
     private Long quantity;
     // 是否进行勾选 1表示勾选 0表示未勾选
     private Integer checked;
+    // 购物车状态0表示删除1表示使用
+    private Integer status;
 
     public Date createTime;
 
@@ -25,18 +27,20 @@ public class Cart {
 
     public Cart(){}
 
-    public Cart(Long userId, Long productId, Long quantity, Integer checked) {
+    public Cart(Long userId, Long productId, Long quantity, Integer checked, Integer status) {
         this.userId = userId;
         this.productId = productId;
         this.quantity = quantity;
         this.checked = checked;
+        this.status = status;
     }
 
-    public Cart(Long userId, Long productId, Long quantity, Integer checked, Date createTime, Date updateTime) {
+    public Cart(Long userId, Long productId, Long quantity, Integer checked, Integer status, Date createTime, Date updateTime) {
         this.userId = userId;
         this.productId = productId;
         this.quantity = quantity;
         this.checked = checked;
+        this.status = status;
         this.createTime = createTime;
         this.updateTime = updateTime;
     }

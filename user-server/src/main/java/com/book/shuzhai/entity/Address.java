@@ -1,5 +1,6 @@
 package com.book.shuzhai.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
 import java.util.Date;
@@ -21,8 +22,10 @@ public class Address {
     // 地址状态 -1表示删除 0表示默认地址 1表示使用地址
     private Integer status;
     // 创建时间
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createTime;
     // 最后一次更改时间
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date updateTime;
 
     public Address(){}

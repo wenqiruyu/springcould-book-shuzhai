@@ -26,6 +26,12 @@
         values(#{username},#{password},#{email},#{qq},#{phone},#{role},#{sex},#{face},#{birthday},#{signature},#{question},#{createTime},#{updateTime})
     </insert>
 
+    <select id="queryAllUser" resultMap="userMap">
+        select
+        <include refid="userList"/>
+        from book_user
+    </select>
+
     <select id="queryUserById" resultType="com.book.shuzhai.entity.User">
         select
         <include refid="userList"/>
@@ -54,7 +60,26 @@
 
     <update id="updateUser">
         update book_user
-        set username = #{username},birthday = #{birthday},sex = #{sex},signature = #{signature},update_time = #{updateTime}
+        <set>
+            <if test="username != null and username.trim() != ''">
+                username = #{username},
+            </if>
+            <if test="birthday != null and birthday.trim() != ''">
+                birthday = #{birthday},
+            </if>
+            <if test="sex != null">
+                sex = #{sex},
+            </if>
+            <if test="signature != null and signature.trim() != ''">
+                signature = #{signature},
+            </if>
+            <if test="password != null and password.trim() != ''">
+                password = #{password},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
         where id = #{id}
     </update>
 </mapper>

@@ -28,7 +28,9 @@ public class User {
     // 密保问题,使用json格式存储
     private String question;
     // 设置时间戳 createTime创建时间  updateTime最后一次更改时间
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createTime;
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date updateTime;
 
     public User(){}

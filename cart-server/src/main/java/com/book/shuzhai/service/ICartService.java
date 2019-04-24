@@ -1,6 +1,7 @@
 package com.book.shuzhai.service;
 
 import com.book.shuzhai.entity.Cart;
+import com.book.shuzhai.entity.Product;
 
 import java.util.List;
 
@@ -21,4 +22,8 @@ public interface ICartService {
     int deleteAllCart(List<Long> list);
 
     Cart getCartById(Long id);
+
+    List<Cart> getAllCart(List<Long> id);
+
+    Product getProductById(Long id);
 }

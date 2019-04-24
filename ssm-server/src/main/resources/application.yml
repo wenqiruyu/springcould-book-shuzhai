@@ -4,17 +4,17 @@ spring:
   application:
     name: sms-server
   datasource:
-    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
 eureka:
   client:
     service-url:
       defaultZone: http://peer1:9997/eureka/,http://peer2:9998/eureka/,http://peer3:9999/eureka/
-#ÅäÖÃmybatis×Ô¶¯¶Ôbean½øÐÐ×¢Èë
+#ï¿½ï¿½ï¿½ï¿½mybatisï¿½Ô¶ï¿½ï¿½ï¿½beanï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½
 mybatis:
   type-aliases-package: com.book.shuzhai.entity
   configuration:
     jdbc-type-for-null: null
-    map-underscore-to-camel-case: true #ÏÂ»®Ïß×Ô¶¯×ªÍÕ·å
+    map-underscore-to-camel-case: true #ï¿½Â»ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½×ªï¿½Õ·ï¿½
   mapper-locations: classpath:mapper/*Mapper.xml

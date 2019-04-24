@@ -10,8 +10,10 @@
         <module name="category-server" />
         <module name="eureka-server" />
         <module name="gateway-zuul" />
+        <module name="order-server" />
         <module name="pay-server" />
         <module name="product-sever" />
+        <module name="redis-server" />
         <module name="springcloud-shuzhai" />
         <module name="ssm-server" />
         <module name="user-server" />
@@ -24,8 +26,10 @@
       <module name="category-server" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="gateway-zuul" options="-parameters" />
+      <module name="order-server" options="-parameters" />
       <module name="pay-server" options="-parameters" />
       <module name="product-sever" options="-parameters" />
+      <module name="redis-server" options="-parameters" />
       <module name="springcloud-shuzhai" options="-parameters" />
       <module name="ssm-server" options="-parameters" />
       <module name="user-server" options="-parameters" />

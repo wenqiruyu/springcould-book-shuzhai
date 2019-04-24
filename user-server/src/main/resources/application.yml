@@ -4,9 +4,14 @@ spring:
   application:
     name: user-server
   datasource:
-    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://localhost:3306/shuzhai_book?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: root
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 60000
 eureka:
   client:
     service-url:
@@ -27,6 +32,11 @@ feign:
     config:
       user-server:
         loggerLevel: FULL
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  MaxAutoRetries: 0
+  MaxAutoRetriesNextServer: 0
 #配置用户常量 用户角色 用户性别 用户头像
 role: 1
 sex: 0

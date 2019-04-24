@@ -1,6 +1,7 @@
 package com.book.shuzhai.mapper;
 
 import com.book.shuzhai.entity.Cart;
+import com.book.shuzhai.entity.Product;
 
 import java.util.List;
 
@@ -21,4 +22,8 @@ public interface CartMapper {
     int deleteAllCart(List<Long> list);
 
     Cart queryCartById(Long id);
+
+    List<Cart> queryAllCart(List<Long> id);
+
+    Product queryProductById(Long id);
 }
